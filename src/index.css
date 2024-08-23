@@ -1,0 +1,149 @@
+/* General Body Styling */
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #2b68af; /* Light gray-blue background */
+  margin: 0;
+  padding: 30px; /* Increased padding for better spacing */
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+}
+
+/* Main App Styling */
+.App {
+  text-align: center;
+  max-width: 800px; /* Slightly narrower container */
+  width: 100%;
+  margin: 20px auto; /* Centered container */
+  background-color: #ffffff;
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.2); /* Slightly deeper shadow */
+  border-radius: 16px; /* More rounded corners */
+  overflow: hidden;
+}
+
+/* Header Styling */
+.App-header {
+  background-color: #030f30; /* Darker blue */
+  color: #f0f4f8; /* Very light blue text */
+  padding: 20px; /* Reduced padding for a compact look */
+}
+
+.App-header h1 {
+  margin: 0;
+  font-size: 2.4rem; /* Slightly smaller heading size */
+  font-weight: 700; /* Bolder font weight */
+}
+
+/* Textarea Styling */
+textarea#editor {
+  width: 100%;
+  height: 350px; /* Increased height for better writing space */
+  padding: 15px; /* Reduced padding for a tighter look */
+  border: none;
+  border-bottom: 3px solid #c5d3e0; /* Lighter border color */
+  resize: none;
+  font-size: 1.2rem; /* Slightly larger font size for readability */
+  font-family: 'Fira Code', monospace;
+  color: #3a3a3a; /* Darker text color */
+  background-color: #ffffff;
+  transition: all 0.3s ease;
+}
+
+textarea#editor:focus {
+  outline: none;
+  border-bottom: 3px solid #2a3c6c; /* Darker blue border */
+  background-color: #f0f4f8; /* Light blue background */
+  box-shadow: 0 6px 8px rgba(42, 60, 108, 0.2); /* Slightly deeper shadow */
+}
+
+/* Preview Section Styling */
+#preview {
+  padding: 25px; /* Reduced padding for a more compact preview */
+  text-align: left;
+  background-color: #ffffff;
+  color: #333333; /* Darker text color for better readability */
+  font-size: 1.2rem; /* Slightly larger font size for readability */
+  line-height: 1.7; /* Increased line-height for better readability */
+}
+
+#preview h1 {
+  color: #2a3c6c; /* Darker blue */
+  font-size: 2.2rem; /* Slightly smaller heading size */
+}
+
+#preview h2 {
+  color: #4a6fa5; /* Softer blue */
+  font-size: 1.8rem; /* Slightly smaller heading size */
+}
+
+#preview h3 {
+  color: #2a3c6c; /* Darker blue */
+  font-size: 1.4rem; /* Slightly smaller heading size */
+}
+
+#preview code {
+  background-color: #f1f5f9; /* Very light gray */
+  padding: 4px 8px; /* Slightly more padding */
+  border-radius: 4px;
+  font-family: 'Fira Code', monospace;
+  font-size: 0.95em;
+}
+
+#preview pre {
+  background-color: #333333; /* Darker gray for code blocks */
+  color: #e1e1e1; /* Light gray text color */
+  padding: 18px; /* Reduced padding */
+  border-radius: 6px; /* Slightly rounded corners */
+  overflow-x: auto;
+  font-size: 0.95em;
+}
+
+#preview a {
+  color: #2a3c6c; /* Darker blue */
+  text-decoration: none;
+  border-bottom: 1px solid #2a3c6c;
+  transition: all 0.2s ease;
+}
+
+#preview a:hover {
+  color: #4a6fa5; /* Softer blue */
+  border-bottom: 2px solid #4a6fa5;
+}
+
+#preview blockquote {
+  margin: 20px 0; /* Reduced margin */
+  padding-left: 20px; /* Reduced padding */
+  border-left: 4px solid #2a3c6c; /* Darker blue border */
+  color: #444444; /* Darker gray for blockquotes */
+  font-style: italic;
+}
+
+#preview ul, #preview ol {
+  margin-left: 20px; /* Reduced margin for lists */
+}
+
+#preview img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 20px 0; /* Reduced margin */
+  border-radius: 6px; /* Slightly rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); /* Slightly softer shadow */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .App {
+    margin: 10px auto; /* Centered with reduced margin */
+    box-shadow: none; /* Removed shadow for smaller screens */
+  }
+
+  .App-header h1 {
+    font-size: 2rem; /* Smaller heading size */
+  }
+
+  textarea#editor {
+    height: 280px; /* Increased height for smaller screens */
+  }
+}
