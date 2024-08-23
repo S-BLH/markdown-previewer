@@ -71,9 +71,8 @@ And here. | Okay. | I think we get it.
   const parseMarkdown = (md) => {
     if (window.marked) {
       return window.marked.parse(md);
-    } else {
-      return md;
     }
+    return md;
   };
 
   return (
