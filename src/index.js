@@ -14,5 +14,5 @@ root.render(
     <React.Suspense fallback={<div>Loading...</div>}>
       <App />
     </React.Suspense>
-  </React.StrictMode>
+  </React.StrictMode>,
 );
