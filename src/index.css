@@ -16,7 +16,7 @@ body {
   max-width: 800px; /* Slightly narrower container */
   width: 100%;
   margin: 20px auto; /* Centered container */
-  background-color: #ffffff;
+  background-color: #fff;
   box-shadow: 0 6px 24px rgba(0, 0, 0, 0.2); /* Slightly deeper shadow */
   border-radius: 16px; /* More rounded corners */
   overflow: hidden;
@@ -45,8 +45,8 @@ textarea#editor {
   resize: none;
   font-size: 1.2rem; /* Slightly larger font size for readability */
   font-family: 'Fira Code', monospace;
-  color: #3a3a3a; /* Darker text color */
-  background-color: #ffffff;
+  color: #333; /* Darker text color */
+  background-color: #fff;
   transition: all 0.3s ease;
 }
 
@@ -61,8 +61,8 @@ textarea#editor:focus {
 #preview {
   padding: 25px; /* Reduced padding for a more compact preview */
   text-align: left;
-  background-color: #ffffff;
-  color: #333333; /* Darker text color for better readability */
+  background-color: #fff;
+  color: #333; /* Darker text color for better readability */
   font-size: 1.2rem; /* Slightly larger font size for readability */
   line-height: 1.7; /* Increased line-height for better readability */
 }
@@ -91,7 +91,7 @@ textarea#editor:focus {
 }
 
 #preview pre {
-  background-color: #333333; /* Darker gray for code blocks */
+  background-color: #333; /* Darker gray for code blocks */
   color: #e1e1e1; /* Light gray text color */
   padding: 18px; /* Reduced padding */
   border-radius: 6px; /* Slightly rounded corners */
@@ -115,11 +115,12 @@ textarea#editor:focus {
   margin: 20px 0; /* Reduced margin */
   padding-left: 20px; /* Reduced padding */
   border-left: 4px solid #2a3c6c; /* Darker blue border */
-  color: #444444; /* Darker gray for blockquotes */
+  color: #444; /* Darker gray for blockquotes */
   font-style: italic;
 }
 
-#preview ul, #preview ol {
+#preview ul,
+#preview ol {
   margin-left: 20px; /* Reduced margin for lists */
 }
 
