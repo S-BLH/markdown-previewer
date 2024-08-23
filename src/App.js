@@ -68,7 +68,13 @@ And here. | Okay. | I think we get it.
     setMarkdown(event.target.value);
   };
 
-  const parseMarkdown = (md) => window.marked ? window.marked.parse(md) : md;
+  const parseMarkdown = (md) => {
+    if (window.marked) {
+      return window.marked.parse(md);
+    } else {
+      return md;
+    }
+  };
 
   return (
     <div className="App">
