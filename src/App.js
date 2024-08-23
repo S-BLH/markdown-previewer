@@ -51,7 +51,7 @@ And here. | Okay. | I think we get it.
 
   useEffect(() => {
     const script = document.createElement('script');
-    script.src = "https://cdnjs.cloudflare.com/ajax/libs/marked/14.0.0/marked.min.js";
+    script.src = 'https://cdnjs.cloudflare.com/ajax/libs/marked/14.0.0/marked.min.js';
     script.async = true;
     script.onload = () => {
       window.marked.setOptions({ breaks: true });
@@ -68,9 +68,7 @@ And here. | Okay. | I think we get it.
     setMarkdown(event.target.value);
   };
 
-  const parseMarkdown = (md) => {
-    return window.marked ? window.marked.parse(md) : md;
-  };
+  const parseMarkdown = (md) => window.marked ? window.marked.parse(md) : md;
 
   return (
     <div className="App">
@@ -85,6 +83,7 @@ And here. | Okay. | I think we get it.
         />
         <div
           id="preview"
+          // eslint-disable-next-line react/no-danger
           dangerouslySetInnerHTML={{ __html: isMarkedLoaded ? parseMarkdown(markdown) : '' }}
         />
       </div>
